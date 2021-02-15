@@ -2,25 +2,29 @@
 <html>
   <head>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
   </head>
   <body>
     <header>
       <div class="header-fixed">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <input type="search">
+        <div>
+          <input type="search">
+          <i class="fas fa-microphone"></i>
+          <i class="fas fa-search"></i>
+        </div>
         <a class="sign-in" href="#">Sign in</a>
       </div>
-      <div>
-        <a href=#>All</a>
-        <a href=#>News</a>
-        <a href=#>Videos</a>
-        <a href=#>Maps</a>
-        <a href=#>Shopping</a>
-        <a href=#>More</a>
-      </div>
-      <div>
-        <a href=#>Settings</a>
-        <a href=#>Tools</a>
+      <div class="header-search-type">
+        <a class="justify-self-end search-type" href=#><i class="fas fa-search"></i>All</a>
+        <a class="search-type" href=#><i class="far fa-newspaper"></i>News</a>
+        <a class="search-type" href=#><i class="fab fa-youtube"></i>Videos</a>
+        <a class="search-type" href=#><i class="fas fa-map-marker-alt"></i>Maps</a>
+        <a class="search-type" href=#><i class="fas fa-tag"></i>Shopping</a>
+        <a class="search-type" href=#><i class="fas fa-ellipsis-v"></i>More</a>
+        <a class="search-type" href=#>Settings</a>
+        <a class="justify-self-start search-type" href=#>Tools</a>
       </div>
     </header>
     <main>

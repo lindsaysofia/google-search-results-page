@@ -1,0 +1,58 @@
+:root {
+  --blue: #1f7bf2;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  padding: 10px;
+}
+
+.header-fixed img {
+  width: 100px;
+}
+
+.header-fixed input {
+  outline: none;
+  border: 1px solid rgba(225, 225, 225);
+  border-radius: 20px;
+  height: 40px;
+  width: 500px;
+}
+
+.header-fixed input:hover {
+  box-shadow: 1px 1px 5px 1px rgba(135, 135, 135, 0.1);
+}
+
+.sign-in {
+  color: white;
+  background-color: var(--blue);
+  height: 20px;
+  width: 60px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.sign-in:hover {
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+

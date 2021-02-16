@@ -28,22 +28,37 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   padding: 10px;
+  background-color: white;
+  z-index: 2;
 }
 
 .header-fixed img {
   width: 100px;
 }
 
-.header-fixed input {
-  outline: none;
+.input-container {
   border: 1px solid rgba(225, 225, 225);
   border-radius: 20px;
   height: 40px;
   width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header-fixed input:hover {
+.input-container:hover {
   box-shadow: 1px 1px 5px 1px rgba(135, 135, 135, 0.1);
+}
+
+.input-container input {
+  width: 80%;
+  height: 80%;
+  border: none;
+  outline: none;
+}
+
+.input-container i {
+  color: var(--blue);
 }
 
 .sign-in {
@@ -71,6 +86,7 @@ a:hover {
   column-gap: 1em;
   justify-items: center;
   align-items: center;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 .search-type {

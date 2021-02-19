@@ -222,6 +222,7 @@ figure img {
 
 figcaption {
   align-self: start;
+  text-align: center;
 }
 
 .search-also-search-container button {

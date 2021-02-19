@@ -234,4 +234,25 @@ footer {
   color: var(--blue-h2);
 }
 
+footer {
+  height: 75px;
+  background-color: var(--light-gray);
+  border-top: 1px solid rgba(225, 225, 225);
+}
+
+.footer-container {
+  position: relative;
+  left: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+footer a {
+  color: var(--medium-gray);
+  padding-right: 1em;
+}
+
 

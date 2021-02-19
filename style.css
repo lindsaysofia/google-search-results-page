@@ -194,33 +194,57 @@ h2:hover {
 
 .search-also-search {
   margin: 0px;
-  padding: .5em;
-  border: 1px solid rgba(225, 225, 225);
+  padding: 1em;
+  border: 2px solid rgba(225, 225, 225);
 }
 
-.flex {
+.search-also-search-flex {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
-  border: 1px solid red;
-}
-
-.search-also-search img {
-  max-width: 75px;
 }
 
 figure {
-  border: 1px solid rgba(225, 225, 225);
+  border: 2px solid rgba(225, 225, 225);
   height: 100px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
   justify-content: center;
-  align-items: center;
+  max-width: 75px;
+  padding: 1em; 
 }
 
-footer {
-  position: relative;
-  top: 100px;
+figure img {
+  max-width: 75px;
+  align-self: center;
+}
+
+figcaption {
+  align-self: start;
+}
+
+.search-also-search-container button {
+  display: block;
+  border: 1px solid rgba(225, 225, 225);
+  border-radius: 20px;
+  background-color: white;
+  color: var(--blue-h2);
+  padding: .5em 1em;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.search-also-search-container button::before {
+  content: "→";
+  color: var(--blue-h2);
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+.search-also-search-container button:hover,
+figure:hover {
+  cursor: pointer;
 }
 
 .search-related-to-grid {
@@ -235,6 +259,8 @@ footer {
 }
 
 footer {
+  position: relative;
+  top: 100px;
   height: 75px;
   background-color: var(--light-gray);
   border-top: 1px solid rgba(225, 225, 225);
